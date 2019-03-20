@@ -1,0 +1,296 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ’’;
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #222222;
+  background: #f6f7f8;
+  font-size: 16px;
+  line-height: 24px;
+}
+.containerOfHome {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .containerOfHome {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+.qa {
+  border: 1px solid red;
+  background: yellow;
+}
+.tabs {
+  width: 100%;
+  margin: 0 0 30% 0;
+}
+.tabs .tabs-items {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.tabs .tabs-item {
+  display: none;
+  width: 100%;
+}
+.tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.tabs .tabs-item .tabs-item-description {
+  width: 100%;
+}
+.tabs .tabs-item .tabs-item-description p {
+  padding: 2% 5% 5% 0;
+}
+.tabs .tabs-item .img-container {
+  width: 100%;
+}
+.tabs .tabs-item-selected {
+  display: flex;
+  background: #f5d1b4;
+  padding: 5% 2% 10% 2%;
+  border: 2px outset #748099;
+}
+.tabs .tabs-links {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f6f7f8;
+}
+.tabs .tabs-link {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #71cbc4;
+  border: 1px solid #748099;
+  border-radius: 5%;
+  color: white;
+  cursor: pointer;
+}
+.tabs .tabs-link:hover {
+  background-color: #748099;
+  color: #fff;
+  border: 1px solid #71cbc4;
+}
+.tabs .tabs-link-selected {
+  z-index: 2;
+  border: 2px solid #748099;
+  background-color: #de9590;
+  color: white;
+}
+.tabs .tabs-link-selected:hover {
+  background-color: #de9590;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 3rem;
+  font-family: 'Sniglet', cursive;
+  color: white;
+  background: #748099;
+}
+.navHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3%;
+  font-size: 1.6rem;
+  font-family: 'Sniglet', cursive;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: #748099;
+}
+a:visited {
+  text-decoration: none;
+  color: #748099;
+}
+.changing {
+  width: 100%;
+  height: 20%;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  11.11% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  44.44% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.fade-in img {
+  opacity: 0;
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.fade-in img:nth-child(1) {
+  animation-delay: 0s;
+}
+.fade-in img:nth-child(2) {
+  animation-delay: 1s;
+}
+.fade-in img:nth-child(3) {
+  animation-delay: 2s;
+}
+.fade-in img:nth-child(4) {
+  animation-delay: 3s;
+}
