@@ -9,6 +9,10 @@ h1{
     color: white;
     background: #748099;
 }
+.containerOfAboutUs{
+  font-family: 'IBM Plex Sans', sans-serif;
+
+}
 .navAbout{
     .center;
   
@@ -71,12 +75,19 @@ h1{
       background: #de9590;
       padding:5% 2% 10% 2%;
       border: 2px outset #748099 ;
-      
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+      }
     }
     .tabs-links {
       display: flex;
       justify-content: space-evenly;
       background-color: #f6f7f8;
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+      }
     }
     .tabs-link {
       padding: 1rem 2rem;
@@ -87,6 +98,10 @@ h1{
       border-radius: 5%;
       color:white;
       cursor: pointer;
+      @media @mobile {
+      display: flex;
+      justify-content: center;
+      }
       &:hover {
         background-color:#748099;
         color: #fff;
@@ -102,5 +117,11 @@ h1{
         background-color: #de9590;
       }
     }
+  }
+  .button {
+    border: 2px solid #748099;
+    font-size: 20px;
+    background: white;
+    padding:3%;
   }
 
