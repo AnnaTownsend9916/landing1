@@ -149,6 +149,18 @@ body {
   .containerOfHome {
     max-width: 500px;
     width: 100%;
+    padding: 0 2% 0 2%;
+  }
+}
+.containerOfAboutUs {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .containerOfAboutUs {
+    max-width: 500px;
+    width: 100%;
   }
 }
 .qa {
@@ -173,15 +185,18 @@ body {
   font-size: 24px;
   font-weight: bold;
   padding-bottom: 10px;
+  color: white;
 }
 .tabs .tabs-item .tabs-item-description {
   width: 100%;
 }
 .tabs .tabs-item .tabs-item-description p {
   padding: 2% 5% 5% 0;
+  color: #ffffff;
 }
 .tabs .tabs-item .img-container {
-  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .tabs .tabs-item-selected {
   display: flex;
@@ -189,10 +204,23 @@ body {
   padding: 5% 2% 10% 2%;
   border: 2px outset #748099;
 }
+@media (max-width: 500px) {
+  .tabs .tabs-item-selected .recipe {
+    display: none;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .tabs .tabs-links {
   display: flex;
   justify-content: space-evenly;
   background-color: #f6f7f8;
+}
+@media (max-width: 500px) {
+  .tabs .tabs-links {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .tabs .tabs-link {
   padding: 1rem 2rem;
@@ -243,6 +271,8 @@ nav {
   font-size: 1.6rem;
   font-family: 'Sniglet', cursive;
   text-decoration: none;
+  border-bottom: 2px solid #748099;
+  margin-bottom: 4%;
 }
 a {
   text-decoration: none;
@@ -252,9 +282,13 @@ a:visited {
   text-decoration: none;
   color: #748099;
 }
-.changing {
-  width: 100%;
-  height: 20%;
+.homePage {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3%;
 }
 @keyframes fade {
   0% {
@@ -306,6 +340,9 @@ h1 {
   font-family: 'Sniglet', cursive;
   color: white;
   background: #748099;
+}
+.containerOfAboutUs {
+  font-family: 'IBM Plex Sans', sans-serif;
 }
 .navAbout {
   display: flex;
@@ -364,10 +401,22 @@ a:visited {
   padding: 5% 2% 10% 2%;
   border: 2px outset #748099;
 }
+@media (max-width: 500px) {
+  .tabs .tabs-item-selected {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .tabs .tabs-links {
   display: flex;
   justify-content: space-evenly;
   background-color: #f6f7f8;
+}
+@media (max-width: 500px) {
+  .tabs .tabs-links {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .tabs .tabs-link {
   padding: 1rem 2rem;
@@ -378,6 +427,12 @@ a:visited {
   border-radius: 5%;
   color: white;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .tabs .tabs-link {
+    display: flex;
+    justify-content: center;
+  }
 }
 .tabs .tabs-link:hover {
   background-color: #748099;
@@ -392,6 +447,12 @@ a:visited {
 }
 .tabs .tabs-link-selected:hover {
   background-color: #de9590;
+}
+.button {
+  border: 2px solid #748099;
+  font-size: 20px;
+  background: white;
+  padding: 3%;
 }
 footer {
   padding-top: -250px;

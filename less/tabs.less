@@ -16,30 +16,43 @@
         font-size: 24px;
         font-weight: bold;
         padding-bottom: 10px;
-        
+        color: white;
       }
       .tabs-item-description {
        width: 100%;
         p {
           padding: 2% 5% 5% 0;
+          color: rgb(255, 255, 255);
        }
       }
       .img-container {
        
-        width: 100%;
+       display: flex;
+       justify-content: center;
       }
     }
+    
     .tabs-item-selected {
       display: flex;
       background: #f5d1b4;
       padding:5% 2% 10% 2%;
       border: 2px outset #748099 ;
-      
+      .recipe {
+        @media @mobile {
+         display: none;
+          display: flex;
+          flex-direction: column;
+        }
+      }
     }
     .tabs-links {
       display: flex;
       justify-content: space-evenly;
       background-color: #f6f7f8;
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+      }
     }
     .tabs-link {
       padding: 1rem 2rem;
